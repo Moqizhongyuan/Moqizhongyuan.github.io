@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr" class="scroll-smooth" data-default-appearance="light"
-  data-auto-appearance="true"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  data-auto-appearance="true"><head>
   <meta charset="utf-8" />
   
   <meta http-equiv="content-language" content="zh-cn" />
@@ -15,7 +15,7 @@
   
   
   
-  <link rel="canonical" href="//localhost:1313/posts/%E5%B0%81%E8%A3%85axios%E9%99%8D%E4%BD%8E%E4%BB%A3%E7%A0%81%E8%80%A6%E5%90%88%E5%BA%A6/" />
+  <link rel="canonical" href="/posts/%E5%B0%81%E8%A3%85axios%E9%99%8D%E4%BD%8E%E4%BB%A3%E7%A0%81%E8%80%A6%E5%90%88%E5%BA%A6/" />
   
   
   
@@ -60,7 +60,7 @@
   
   
   
-  <meta property="og:url" content="//localhost:1313/posts/%E5%B0%81%E8%A3%85axios%E9%99%8D%E4%BD%8E%E4%BB%A3%E7%A0%81%E8%80%A6%E5%90%88%E5%BA%A6/">
+  <meta property="og:url" content="/posts/%E5%B0%81%E8%A3%85axios%E9%99%8D%E4%BD%8E%E4%BB%A3%E7%A0%81%E8%80%A6%E5%90%88%E5%BA%A6/">
   <meta property="og:site_name" content="Moqizhongyuan的个人网站">
   <meta property="og:title" content="关于封装axios网络请求降低代码耦合度">
   <meta property="og:description" content="引言 # 在项目中直接使用Axios或其他第三方库来发送网络请求获取数据时，会导致代码与网络请求的逻辑耦合度过高，导致难以维护。 本文将讲解如何将网路请求的代码进行封装来进行解耦操作 理解耦合度 # 代码耦合分为两种，直接依赖的结构耦合和间接依赖的内容耦合，这两种耦合都会导致可维护性下降、可测试性下降、可复用性下降、可扩展性下降。 这里在项目中直接使用Axios发送网络请求就是结构耦合，如果Axios的第三方库发生更新或者废弃，会导致我们的项目非常难以维护，这时将Axios封装到一个类中，就可以降低这种直接依赖带来的影响 Axios 概述 # Axios 是一个流行的用于发起 HTTP 请求的 JavaScript 库。它提供了一种简洁、灵活且易于使用的方式来处理网络请求，并且可以在浏览器和 Node.">
@@ -69,11 +69,11 @@
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2024-06-03T00:00:00+00:00">
     <meta property="article:modified_time" content="2024-06-03T00:00:00+00:00">
-    <meta property="og:image" content="//localhost:1313/posts/%E5%B0%81%E8%A3%85axios%E9%99%8D%E4%BD%8E%E4%BB%A3%E7%A0%81%E8%80%A6%E5%90%88%E5%BA%A6/featured.jpg">
+    <meta property="og:image" content="/posts/%E5%B0%81%E8%A3%85axios%E9%99%8D%E4%BD%8E%E4%BB%A3%E7%A0%81%E8%80%A6%E5%90%88%E5%BA%A6/featured.jpg">
 
   
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="//localhost:1313/posts/%E5%B0%81%E8%A3%85axios%E9%99%8D%E4%BD%8E%E4%BB%A3%E7%A0%81%E8%80%A6%E5%90%88%E5%BA%A6/featured.jpg">
+  <meta name="twitter:image" content="/posts/%E5%B0%81%E8%A3%85axios%E9%99%8D%E4%BD%8E%E4%BB%A3%E7%A0%81%E8%80%A6%E5%90%88%E5%BA%A6/featured.jpg">
   <meta name="twitter:title" content="关于封装axios网络请求降低代码耦合度">
   <meta name="twitter:description" content="引言 # 在项目中直接使用Axios或其他第三方库来发送网络请求获取数据时，会导致代码与网络请求的逻辑耦合度过高，导致难以维护。 本文将讲解如何将网路请求的代码进行封装来进行解耦操作 理解耦合度 # 代码耦合分为两种，直接依赖的结构耦合和间接依赖的内容耦合，这两种耦合都会导致可维护性下降、可测试性下降、可复用性下降、可扩展性下降。 这里在项目中直接使用Axios发送网络请求就是结构耦合，如果Axios的第三方库发生更新或者废弃，会导致我们的项目非常难以维护，这时将Axios封装到一个类中，就可以降低这种直接依赖带来的影响 Axios 概述 # Axios 是一个流行的用于发起 HTTP 请求的 JavaScript 库。它提供了一种简洁、灵活且易于使用的方式来处理网络请求，并且可以在浏览器和 Node.">
 
@@ -88,7 +88,7 @@
     
     "abstract": "引言 # 在项目中直接使用Axios或其他第三方库来发送网络请求获取数据时，会导致代码与网络请求的逻辑耦合度过高，导致难以维护。 本文将讲解如何将网路请求的代码进行封装来进行解耦操作 理解耦合度 # 代码耦合分为两种，直接依赖的结构耦合和间接依赖的内容耦合，这两种耦合都会导致可维护性下降、可测试性下降、可复用性下降、可扩展性下降。 这里在项目中直接使用Axios发送网络请求就是结构耦合，如果Axios的第三方库发生更新或者废弃，会导致我们的项目非常难以维护，这时将Axios封装到一个类中，就可以降低这种直接依赖带来的影响 Axios 概述 # Axios 是一个流行的用于发起 HTTP 请求的 JavaScript 库。它提供了一种简洁、灵活且易于使用的方式来处理网络请求，并且可以在浏览器和 Node.",
     "inLanguage": "zh-cn",
-    "url" : "\/\/localhost:1313\/posts\/%E5%B0%81%E8%A3%85axios%E9%99%8D%E4%BD%8E%E4%BB%A3%E7%A0%81%E8%80%A6%E5%90%88%E5%BA%A6\/",
+    "url" : "\/posts\/%E5%B0%81%E8%A3%85axios%E9%99%8D%E4%BD%8E%E4%BB%A3%E7%A0%81%E8%80%A6%E5%90%88%E5%BA%A6\/",
     "author" : {
       "@type": "Person",
       "name": "Moqizhongyuan"
@@ -1120,6 +1120,28 @@
         </span>
         <span>
           
+            <a class="flex text-right group ml-3" href="/posts/%E9%A1%B9%E7%9B%AE%E6%89%93%E5%8C%85%E5%92%8C%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >项目打包和自动化部署</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-06-04 00:00:00 &#43;0000 UTC">2024/06/04</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
         </span>
       </div>
     </div>
@@ -1183,7 +1205,7 @@
 <div
   id="search-wrapper"
   class="invisible fixed inset-0 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
-  data-url="//localhost:1313/"
+  data-url="/"
   style="z-index:500"
 >
   <div

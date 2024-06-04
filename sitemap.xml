@@ -3,52 +3,58 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>//localhost:1313/posts/</loc>
+    <loc>/posts/</loc>
+    <lastmod>2024-06-04T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>/</loc>
+    <lastmod>2024-06-04T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>/posts/%E9%A1%B9%E7%9B%AE%E6%89%93%E5%8C%85%E5%92%8C%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2/</loc>
+    <lastmod>2024-06-04T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>/posts/%E5%B0%81%E8%A3%85axios%E9%99%8D%E4%BD%8E%E4%BB%A3%E7%A0%81%E8%80%A6%E5%90%88%E5%BA%A6/</loc>
     <lastmod>2024-06-03T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/posts/%E5%B0%81%E8%A3%85axios%E9%99%8D%E4%BD%8E%E4%BB%A3%E7%A0%81%E8%80%A6%E5%90%88%E5%BA%A6/</loc>
+    <loc>/posts/%E9%80%9F%E9%80%9Ajquery/</loc>
     <lastmod>2024-06-03T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/</loc>
-    <lastmod>2024-06-03T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>//localhost:1313/posts/%E9%80%9F%E9%80%9Ajquery/</loc>
-    <lastmod>2024-06-03T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>//localhost:1313/posts/second-post/</loc>
+    <loc>/posts/second-post/</loc>
     <lastmod>2024-06-01T23:22:13+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/about/</loc>
+    <loc>/about/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/projects/</loc>
+    <loc>/projects/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/projects/reactprojects/</loc>
+    <loc>/projects/reactprojects/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>//localhost:1313/projects/vueprojects/</loc>
+    <loc>/projects/vueprojects/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
