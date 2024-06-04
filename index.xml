@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Moqizhongyuan的个人网站</title>
+    <title>欢迎来到 Blowfish ！ on Moqizhongyuan的个人网站</title>
     <link>//localhost:1313/</link>
-    <description>Recent content on Moqizhongyuan的个人网站</description>
+    <description>Recent content in 欢迎来到 Blowfish ！ on Moqizhongyuan的个人网站</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 Moqizhongyuan</copyright>
     <lastBuildDate>Mon, 03 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于封装axios网络请求降低代码耦合度</title>
+      <link>//localhost:1313/posts/%E5%B0%81%E8%A3%85axios%E9%99%8D%E4%BD%8E%E4%BB%A3%E7%A0%81%E8%80%A6%E5%90%88%E5%BA%A6/</link>
+      <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/posts/%E5%B0%81%E8%A3%85axios%E9%99%8D%E4%BD%8E%E4%BB%A3%E7%A0%81%E8%80%A6%E5%90%88%E5%BA%A6/</guid>
+      <description>引言 # 在项目中直接使用Axios或其他第三方库来发送网络请求获取数据时，会导致代码与网络请求的逻辑耦合度过高，导致难以维护。 本文将讲解如何将网路请求的代码进行封装来进行解耦操作 理解耦合度 # 代码耦合分为两种，直接依赖的结构耦合和间接依赖的内容耦合，这两种耦合都会导致可维护性下降、可测试性下降、可复用性下降、可扩展性下降。 这里在项目中直接使用Axios发送网络请求就是结构耦合，如果Axios的第三方库发生更新或者废弃，会导致我们的项目非常难以维护，这时将Axios封装到一个类中，就可以降低这种直接依赖带来的影响 Axios 概述 # Axios 是一个流行的用于发起 HTTP 请求的 JavaScript 库。它提供了一种简洁、灵活且易于使用的方式来处理网络请求，并且可以在浏览器和 Node.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/posts/%E5%B0%81%E8%A3%85axios%E9%99%8D%E4%BD%8E%E4%BB%A3%E7%A0%81%E8%80%A6%E5%90%88%E5%BA%A6/featured.jpg" />
+    </item>
+    
     <item>
       <title>速通jQuery</title>
       <link>//localhost:1313/posts/%E9%80%9F%E9%80%9Ajquery/</link>
