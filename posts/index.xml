@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Moqizhongyuan的个人网站</title>
+    <link>//localhost:1313/posts/</link>
+    <description>Recent content on Moqizhongyuan的个人网站</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>© 2024 Moqizhongyuan</copyright>
+    <lastBuildDate>Mon, 03 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>速通jQuery</title>
+      <link>//localhost:1313/posts/%E9%80%9F%E9%80%9Ajquery/</link>
+      <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/posts/%E9%80%9F%E9%80%9Ajquery/</guid>
+      <description>速通 jQuery # 一、基础概念和选择器 # 1.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/posts/%E9%80%9F%E9%80%9Ajquery/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>//localhost:1313/posts/second-post/</link>
+      <pubDate>Sat, 01 Jun 2024 23:22:13 +0800</pubDate>
+      
+      <guid>//localhost:1313/posts/second-post/</guid>
+      <description>Introduction # This is bold text, and this is emphasized text.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="//localhost:1313/posts/second-post/featured.jpg" />
+    </item>
+    
+  </channel>
+</rss>
