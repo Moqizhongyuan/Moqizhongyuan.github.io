@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 Moqizhongyuan</copyright>
-    <lastBuildDate>Tue, 04 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>js中的异步机制</title>
+      <link>/posts/js%E4%B8%AD%E7%9A%84%E5%BC%82%E6%AD%A5%E6%9C%BA%E5%88%B6/</link>
+      <pubDate>Fri, 19 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/js%E4%B8%AD%E7%9A%84%E5%BC%82%E6%AD%A5%E6%9C%BA%E5%88%B6/</guid>
+      <description>引言：为什么需要异步 # 异步编程在现代应用程序中具有重要性，尤其是在处理长时间运行的任务和网络请求时。JavaScript作为一种单线程语言，意味着它一次只能执行一个任务。这就是为什么异步编程在JavaScript中变得至关重要的原因。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/posts/js%E4%B8%AD%E7%9A%84%E5%BC%82%E6%AD%A5%E6%9C%BA%E5%88%B6/featured.jpg" />
+    </item>
+    
     <item>
       <title>项目打包和自动化部署</title>
       <link>/posts/%E9%A1%B9%E7%9B%AE%E6%89%93%E5%8C%85%E5%92%8C%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2/</link>

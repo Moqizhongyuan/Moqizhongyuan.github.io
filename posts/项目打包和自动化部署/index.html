@@ -102,7 +102,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "355"
+    "wordCount": "356"
   }]
   </script>
 
@@ -593,7 +593,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2024-06-04 00:00:00 &#43;0000 UTC">2024/06/04</time><span class="px-2 text-primary-500">&middot;</span><span>355 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
+  <time datetime="2024-06-04 00:00:00 &#43;0000 UTC">2024/06/04</time><span class="px-2 text-primary-500">&middot;</span><span>356 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">2 分钟</span><span class="px-2 text-primary-500">&middot;</span><span>
   
   
     
@@ -1149,12 +1149,10 @@
 <li>wget 是 Linux 中下载文件的一个工具，-O 表示输出到某个文件夹并且命名为什么文件；</li>
 <li>rpm：全称为<strong>The RPM Package Manage</strong>，是 Linux 下一个软件包管理器；</li>
 </ul>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">wget –O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo<span class="p">;</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># 导入GPG密钥以确保您的软件合法</span>
-</span></span><span class="line"><span class="cl">rpm --import https://pkg.jenkins.io/redhat/jenkins.io.key
-</span></span><span class="line"><span class="cl"><span class="c1"># 或者</span>
-</span></span><span class="line"><span class="cl">rpm --import http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key
+</span></span><span class="line"><span class="cl">rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key<span class="p">;</span>
 </span></span></code></pre></div><p>编辑一下文件/etc/yum.repos.d/jenkins.repo</p>
 <ul>
 <li>可以通过 vim 编辑</li>
@@ -1220,6 +1218,9 @@ gpgcheck=1
 <p>之后需要重启一下 Jenkins：</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 也可以将Jenkins添加到root组中</span>
 </span></span><span class="line"><span class="cl">sudo usermod -a -G root jenkins
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 也可以给Jenkins目录权限</span>
+</span></span><span class="line"><span class="cl">chown -R jenkins /xxx/xxx
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">systemctl restart jenkins
 </span></span></code></pre></div>
@@ -1612,6 +1613,28 @@ gpgcheck=1
           
         </span>
         <span>
+          
+            <a class="flex text-right group ml-3" href="/posts/js%E4%B8%AD%E7%9A%84%E5%BC%82%E6%AD%A5%E6%9C%BA%E5%88%B6/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >js中的异步机制</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2024-07-19 00:00:00 &#43;0000 UTC">2024/07/19</time>
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
           
         </span>
       </div>
