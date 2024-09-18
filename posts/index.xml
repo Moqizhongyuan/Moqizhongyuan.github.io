@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2024 Moqizhongyuan</copyright>
-    <lastBuildDate>Fri, 19 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Sep 2024 00:00:00 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>coScene实习经验分享</title>
+      <link>/posts/coscene%E5%AE%9E%E4%B9%A0%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/</link>
+      <pubDate>Wed, 18 Sep 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/coscene%E5%AE%9E%E4%B9%A0%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/</guid>
+      <description>实习经验分享 # 引言 # 我实习的公司是上海刻行时空科技有限公司，所在的部门是web组，岗位是前端开发实习生，我的职责主要是协助完成页面整改，对页面样式进行调整，修改页面bug，对页面已有组件进行封装。</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="/posts/coscene%E5%AE%9E%E4%B9%A0%E7%BB%8F%E9%AA%8C%E5%88%86%E4%BA%AB/featured.jpg" />
+    </item>
+    
     <item>
       <title>js中的异步机制</title>
       <link>/posts/js%E4%B8%AD%E7%9A%84%E5%BC%82%E6%AD%A5%E6%9C%BA%E5%88%B6/</link>
